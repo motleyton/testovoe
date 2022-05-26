@@ -1,0 +1,10 @@
+drop_features: [uuid, worst_status_active_inv, name_in_email, account_status, account_worst_status_0_3m, account_worst_status_3_6m,account_worst_status_6_12m, account_worst_status_12_24m]
+drop_na_features: [default]
+fill_with_median: [account_days_in_dc_12_24m, account_days_in_rem_12_24m,account_days_in_term_12_24m, avg_payment_span_0_3m, avg_payment_span_0_12m]
+fill_with_zero: [num_arch_written_off_12_24m, num_arch_written_off_0_12m,account_incoming_debt_vs_paid_0_24m,num_active_div_by_paid_inv_0_12m]
+features_to_encode: [merchant_category, merchant_group]
+features_to_normalize: [account_amount_added_12_24m]
+y: default
+model_file_path: model.pkl
+encoder_file_path: encoder.pkl
+normalizer_file_path: normalizer.pkl
